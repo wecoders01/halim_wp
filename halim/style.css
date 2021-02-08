@@ -1,0 +1,282 @@
+/* 
+Theme Name: Halim
+Theme URI: https://itanvir.xyz/halim/theme/halim
+Description: Wordpress Multipurpose Theme
+Version: 1.0
+Author: iTanvir
+Author URI: https://itanvir.xyz/
+Tags: one-column, flexible-header, accessibility-ready
+Requires at least: 4.9.6
+Requires PHP: 5.2.4
+Tested up to: 5.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: halim
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%; /* Image does not overflow the content area */
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+.gallery-caption {
+}
+.bypostauthor {
+}
+
+/* Comment form */
+
+.comments input,
+.comments textarea {
+	margin-bottom: 0;
+}
+#wp-comment-cookies-consent {
+	width: auto;
+}
+.comment-list .comment-author.vcard img {
+	width: 100px;
+	border: none;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+}
+
+.comment-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	padding-left: 113px;
+}
+
+.comment-author.vcard span {
+	display: none;
+}
+
+.comment-author.vcard {
+	display: inline-block;
+}
+
+.comment-meta {
+	display: block;
+}
+
+.comment-metadata {
+	display: inline-block;
+	margin-left: 5px;
+	opacity: 0.7;
+}
+.comment-content {
+	margin-top: -12px;
+	margin-bottom: -10px;
+}
+
+.comment-list .reply {
+	font-size: 15px;
+	font-weight: 500;
+}
+.comment-list .children {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	padding-left: 55px;
+	position: relative;
+}
+
+.comment-list .children .comment-author.vcard img {
+	left: -60px;
+}
+
+.comment-list article {
+	margin-bottom: 30px;
+}
+
+/* Side bar */
+#calendar_wrap table {
+	width: 100%;
+}
+
+.textwidget li a {
+	text-transform: capitalize;
+}
+
+/* Breadcrumb */
+.breadcumb h4,
+.breadcumb li {
+	text-transform: capitalize;
+}
+
+.breadcumb li a {
+	color: #fff;
+}
+
+/* Blog Pagination */
+
+.navigation.pagination {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 20px;
+}
+.navigation.pagination .screen-reader-text {
+	display: none;
+}
+
+.navigation.pagination a,
+.navigation.pagination span.current {
+	font-size: 15px;
+	border: 1px solid #ddd;
+	padding: 2px 10px;
+	margin: 0 3px;
+	display: inline-block;
+}
+
+.navigation.pagination span.current {
+	background: #635cdb;
+	color: #fff;
+	border-color: #635cdb;
+}
+
+/* Search Widget Css */
+#searchform label {
+	display: none;
+}
+
+#searchform input {
+	width: 100%;
+	position: relative;
+	height: 38px;
+	border: 1px solid #cccc;
+	padding: 0 10px;
+}
+
+#searchform input[type="submit"] {
+	width: auto;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	padding: 5px 21px;
+	border: none;
+	background: #635cdb;
+	color: #fff;
+}
+
+/* Portfolio Css */
+.single-portfolio img {
+	height: 370px;
+	width: 370px;
+}
+.portfolio-menu button {
+	text-transform: capitalize;
+}
+
+/* Single Portfolio */
+.portfolio-single img {
+	width: 100%;
+}
